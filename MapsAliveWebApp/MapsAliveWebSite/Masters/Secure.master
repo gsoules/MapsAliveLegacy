@@ -1,0 +1,35 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Secure.master.cs" Inherits="Masters_Secure" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+	<link href="../Styles/Style.css" rel="stylesheet" type="text/css" />
+	<link href="../Styles/StyleSecure.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Untitled Page</title>
+	<link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-9MYHNCT1Z5'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9MYHNCT1Z5');
+    </script>
+</head>
+<body class="home" onkeypress='return maOnKeyPress(event);'>
+    <form id="form1" runat="server">
+		<div class="secureBanner">
+			<div class="secureBannerImage">
+				<asp:Image ID="BannerImage" runat="server" onclick="maTransferToPage('/Default.aspx');" style="cursor:pointer;" />
+			</div>
+		</div>
+
+		<div id="PageContent">
+			<div class="pageContent">
+				<asp:contentplaceholder id="ContentBody" runat="server" />
+			</div>
+		</div>
+    </form>
+	<noscript><div class="noScriptWarning"><% =Resources.Text.NoScriptWarning%></div></noscript>
+</body>
+</html>

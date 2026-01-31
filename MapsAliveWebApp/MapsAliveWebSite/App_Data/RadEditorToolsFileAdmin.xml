@@ -1,0 +1,162 @@
+<root>
+	<tools>
+		<tool name="AjaxSpellCheck" />
+		<tool name="FindAndReplace" shortcut="CTRL+F" />
+		<tool separator="true" />
+		<tool name="Bold" shortcut="CTRL+B"/>
+		<tool name="Italic" shortcut="CTRL+I"/>
+		<tool name="Underline" shortcut="CTRL+U"/>
+		<tool name="StrikeThrough"/>
+		<tool name="JustifyLeft" />
+		<tool name="JustifyCenter" />
+		<tool name="JustifyRight" />
+		<tool name="JustifyFull" />
+		<tool name="InsertHorizontalRule" />
+		<tool name="InsertOrderedList" />
+		<tool name="InsertUnorderedList" />
+	</tools>
+	<tools>
+		<tool name="FontName"/>
+		<tool name="RealFontSize"/>
+		<tool name="ApplyClass" />
+		<tool name="ForeColor" />
+		<tool name="BackColor" />
+		<tool name="LinkManager"/>
+		<tool name="Unlink"/>
+		<tool name="InsertSymbol" />
+		<tool name="InsertSnippet" />
+	</tools>
+	<cssFiles>
+		<item name="../Styles/Admin.css" />
+	</cssFiles>	
+	<symbols>
+		<symbol value="\u20AC" />
+		<symbol value="\u00A2" />
+		<symbol value="\u00A3" />
+		<symbol value="\u00A5" />
+		<symbol value="\u00A4" />
+		<symbol value="\u00A9" />
+		<symbol value="\u00AE" />
+		<symbol value="\u2122" />
+
+		<symbol value="\u00B1" />
+		<symbol value="\u2260" />
+		<symbol value="\u2248" />
+		<symbol value="\u2264" />
+		<symbol value="\u2265" />
+		<symbol value="\u00F7" />
+		<symbol value="\u00D7" />
+		<symbol value="\u221E" />
+
+		<symbol value="\u00BD" />
+		<symbol value="\u00BC" />
+		<symbol value="\u00BE" />
+		<symbol value="\u00B2" />
+		<symbol value="\u00B3" />
+		<symbol value="\u2030" />
+		<symbol value="\u00B6" />
+		<symbol value="\u00A7" />
+
+		<symbol value="\u2013" />
+		<symbol value="\u2014" />
+		<symbol value="\u00B0" />
+		<symbol value="\u00AB" />
+		<symbol value="\u00BB" />
+		<symbol value="\u00B7" />
+		<symbol value="\u2022" />
+		<symbol value="\u2020" />
+
+		<symbol value="\u2018" />
+		<symbol value="\u2019" />
+		<symbol value="\u201C" />
+		<symbol value="\u201D" />
+		<symbol value="\u00Bf" />
+		<symbol value="\u00A1" />
+		<symbol value="\u00B5" />
+		<symbol value="\u2211" />
+	</symbols>
+	
+	<snippets>
+		<snippet name="How To List">
+			<![CDATA[
+				<ol class=faqSteps>
+					<li>Insert list item here.</li>
+					<li>Insert list item here.</li>
+				</ol>
+			]]>
+		</snippet>
+		<snippet name="Bulleted List">
+			<![CDATA[
+				<ul class=faqSteps>
+					<li>Insert list item here.</li>
+					<li>Insert list item here.</li>
+				</ul>
+			]]>
+		</snippet>
+		<snippet name="Gem Block">
+			<![CDATA[
+				<div class="learnMoreGemGraphic">
+					<div class="learnMoreGemContentBox">
+						Add your text here. 
+					</div>
+				</div>			
+			]]>
+		</snippet>
+		<snippet name="Plus and Pro Plans">
+			<![CDATA[
+				<span class="planPlus">(Plus and Pro Plans)</span>
+			]]>
+		</snippet>
+		<snippet name="Pro Plan">
+			<![CDATA[
+				<span class="planPro">(Pro Plan)</span>
+			]]>
+		</snippet>
+		<snippet name="Feature Available in Plus and Pro">
+			<![CDATA[
+				<strong>Note:</strong> The FEATURE is available in the <span class="planPlus">Plus and Pro Plans</span>.
+			]]>
+		</snippet>
+		<snippet name="Feature Available in Pro">
+			<![CDATA[
+				<strong>Note:</strong> The FEATURE is available in the <span class="planPro">Pro Plan</span>.
+			]]>
+		</snippet>
+		<snippet name="User Guide Hotspots">
+			<![CDATA[
+				To learn more about hotspots and markers, choose<br /> <span class="menuReference">Help &gt; Learning Center</span> and see the <em>MapsAlive User Guide for Hotspots &amp; Markers</em>.
+			]]>
+		</snippet>
+		<snippet name="User Guide Tour Layout">
+			<![CDATA[
+				To learn more about tour size and layout, choose <span class="menuReference">Help &gt; Learning Center</span> and see the <em>MapsAlive User Guide for Tour Layout</em>.
+			]]>
+		</snippet>
+		<snippet name="User Guide Content Management">
+			<![CDATA[
+				To learn more about content management, choose <span class="menuReference">Help &gt; Learning Center</span> and see the <em>MapsAlive User Guide for Content Management</em>.
+			]]>
+		</snippet>
+		<snippet name="User Guide Routes">
+			<![CDATA[
+				To learn more about routes, choose <span class="menuReference">Help &gt; Learning Center</span> and see the <em>MapsAlive User Guide for Drawing Routes</em>.
+			]]>
+		</snippet>
+		<snippet name="User Guide JavaScript API">
+			<![CDATA[
+				For complete documentation on the JavaScript API, choose <span class="menuReference">Help &gt; Learning Center</span> and see the <em>MapsAlive User Guide to the JavaScript API</em>.
+			]]>
+		</snippet>
+		<snippet name="User Guide Live Data">
+			<![CDATA[
+				To learn about Live Data, choose <span class="menuReference">Help &gt; Learning Center</span> and see the <em>MapsAlive User Guide for Live Data</em>.
+			]]>
+		</snippet>
+ </snippets>
+
+	<links></links>
+	<symbols></symbols>
+	<fontNames>	</fontNames>
+	<fontSizes></fontSizes>
+	<colors></colors>
+</root>

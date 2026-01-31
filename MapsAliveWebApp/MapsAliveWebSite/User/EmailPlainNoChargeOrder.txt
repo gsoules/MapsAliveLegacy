@@ -1,0 +1,18 @@
+{0}
+
+ORDER INFORMATION
+Account Number: {7}
+Order Number: {1}
+Order Date: {2}
+Purchase: {3}
+Price: {4}
+Email: {5}
+
+This order was paid from your account credit balance.
+Your new balance is {6}.
+
+If you have questions about this order, please send email to support@mapsalive.com or call 207-244-8054.
+
+Thank You,
+The MapsAlive Team
+www.mapsalive.com

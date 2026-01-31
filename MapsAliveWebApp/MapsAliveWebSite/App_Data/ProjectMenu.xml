@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+	<Group>
+		<Item GroupId="Resources" Text="Library" >
+			<Group>
+				<Item Value="TourExplorer" Text="Tours" />
+				<Item IsSeparator="True" />
+				<Item Value="MarkerExplorer" Text="Markers" />
+				<Item Value="SymbolExplorer" Text="Symbols" />
+				<Item Value="MarkerStyleExplorer" Text="Marker Styles" />
+				<Item Value="TooltipStyleExplorer" Text="Tooltip Styles" />
+				<Item Value="FontStyleExplorer" Text="Font Styles" />
+				<Item Value="ColorSchemeExplorer" Text="Color Schemes" />
+				<Item Value="CategoryExplorer" Text="Categories" />
+				<Item Value="Separator2" IsSeparator="True" />
+				<Item Value="_ShowOnlyTourMarkers" Text="Filter Markers (only show for {0})" />
+				<Item Value="_ShowOnlyTourCategories" Text="Filter Categories (only show for {0})" />
+				<Item Value="Separator3" IsSeparator="True" />
+				<Item Value="_DeleteUnused" Text="Delete Unused {0}" />
+				<Item Value="Separator4" IsSeparator="True" />
+				<Item Value="DuplicateResource" Text="Duplicate {0}" />
+				<Item Value="Separator5" IsSeparator="True" />
+				<Item Value="_DeleteResource" Text="Delete {0}" />
+			</Group>
+		</Item>
+		<Item GroupId="TourRestore" Text="Tour" Visible="False" >
+			<Group>
+				<Item Text="Import" >
+					<Group>
+						<Item Value="ImportArchive" Text="Tour from Archive" />
+					</Group>
+				</Item>
+			</Group>
+		</Item>
+		<Item GroupId="Tour" Text="Tour" >
+			<Group>
+				<Item Value="Title_Tour" />
+				<Item Value="TourSetup" Text="Tour Setup" />
+				<Item Value="TourManager" Text="Tour Manager" />
+				<Item IsSeparator="True" />
+				<Item Value="DirectoryOptions" Text="Directory Options" />
+				<Item IsSeparator="True" />
+				<Item Value="CustomHtml" Text="Custom HTML" />
+				<Item IsSeparator="True" />
+				<Item Value="DuplicateTour" Text="Duplicate Tour" />
+				<Item IsSeparator="True" />
+				<Item Text="Import" >
+					<Group>
+						<Item Value="ImportArchive" Text="Tour from Archive" />
+						<Item Value="Title_Tour" />
+						<Item Value="ImportHotspotContent" Text="Content from CSV/Excel/XML" />
+						<Item Value="Title_Map" />
+						<Item Value="ImportHotspotPhotos" Text="Photos from Zip" />
+						<Item Value="ImportMarkerShapes" Text="Marker Shapes" />
+						<Item Value="ImportRoutes" Text="Routes" />
+						<Item Value="Separator12" IsSeparator="True" />
+						<Item Value="LastReport" Text="Last Report" />
+					</Group>
+				</Item>
+				<Item Value="Export" Text="Export" />
+				<Item IsSeparator="True" />
+				<Item Value="DeleteTour" Text="Delete Tour: {0}" />
+			</Group>
+		</Item>
+		<Item GroupId="Map" Text="Map" >
+			<Group>
+				<Item Value="Title_Map" />
+				<Item Value="Map"	Text="Map Editor" />
+				<Item Value="UploadMap" Text="Choose Map Image" />
+				<Item IsSeparator="True" />
+				<Item Value="MapSetup" Text="Map Setup" />
+				<Item Value="MapOptionsAdvanced" Text="Advanced Map Options" />
+				<Item IsSeparator="True" />
+				<Item Text="Replace Markers or Styles" >
+						<Group>
+							<Item Value="ReplaceMarkers" Text="Markers" />
+							<Item Value="ReplaceMarkerStyles" Text="Marker Styles" />
+						</Group>
+				</Item>
+				<Item Value="DeleteHotspots" Text="Delete Multiple Hotspots" />
+				<Item IsSeparator="True" />
+				<Item Value="DeleteMap" Text="Delete Map: {0}" />
+			</Group>
+		</Item>
+		<Item GroupId="Gallery" Text="Gallery" >
+			<Group>
+				<Item Value="Title_Map" />
+				<Item Value="Gallery"	Text="Gallery Editor" />
+				<Item IsSeparator="True" />
+				<Item Value="GallerySetup" Text="Gallery Setup" />
+				<Item Value="MapOptionsAdvanced" Text="Advanced Gallery Options" />
+				<Item Value="UploadMap" Text="Choose Background Image" />
+				<Item IsSeparator="True" />
+				<Item Text="Replace" >
+					<Group>
+						<Item Value="ReplaceMarkers" Text="Markers" />
+						<Item Value="ReplaceMarkerStyles" Text="Marker Styles" />
+					</Group>
+				</Item>
+				<Item Value="DeleteHotspots" Text="Delete Hotspots" />
+				<Item IsSeparator="True" />
+				<Item Value="DeleteGallery" Text="Delete Gallery: {0}" />
+			</Group>
+		</Item>
+		<Item GroupId="DataSheet" Text="Data Sheet" >
+			<Group>
+				<Item Value="Title_Map" />
+				<Item Value="EditHotspotContent" Text="Edit Data Sheet Content" />
+				<Item Value="HotspotOptionsAdvanced" Text="Advanced Data Sheet Options" />
+				<Item IsSeparator="True" />
+				<Item Value="DeleteDataSheet" Text="Delete Data Sheet: {0}" />
+			</Group>
+		</Item>
+		<Item GroupId="Hotspot" Text="Hotspot" >
+			<Group>
+				<Item Value="Title_Hotspot" />
+				<Item Value="EditHotspotContent" Text="Edit Hotspot Content" />
+				<Item Value="HotspotOptionsAdvanced" Text="Advanced Hotspot Options" />
+				<Item Value="EditHotspotActions" Text="Marker Actions" />
+				<Item IsSeparator="True" />
+				<Item Value="LocateHotspot" Text="Locate Hotspot on Map" />
+				<Item IsSeparator="True" />
+				<Item Value="DuplicateHotspot" Text="Duplicate Hotspot {0}" />
+				<Item IsSeparator="True" />
+				<Item Value="DeleteHotspot" Text="Delete Hotspot {0}" />
+			</Group>
+		</Item>
+		<Item GroupId="Layout" Text="Layout" >
+			<Group>
+				<Item Value="Title_Map" />
+				<Item Value="MapMargins" Text="Map Margins" />
+				<Item Value="LayoutAreaMarginsAndSpacing" Text="Margins and Spacing" />
+				<Item Value="TemplateSplittersForLayoutArea" Text="Splitters" />
+				<Item Value="TemplateChoicesForLayoutArea" Text="Template Choices" />
+				<Item Value="Title_Tour" />
+				<Item Value="TourLayoutAdvanced" Text="Advanced Tour Layout" />
+				<Item Value="BannerOptions"  Text="Banner Image" />
+			</Group>
+		</Item>
+		<Item GroupId="Popup" Text="Popup" >
+			<Group>
+				<Item Value="Title_Map" />
+				<Item Value="PopupAppearance" Text="Size and Appearance" />
+				<Item Value="PopupBehavior" Text="Behavior" />
+				<Item Value="TemplateSplittersForPopup" Text="Splitter" />
+				<Item Value="TemplateChoicesForPopup" Text="Template Choices" />
+			</Group>
+		</Item>
+		<Item GroupId="New" Text="New" >
+			<Group>
+				<Item Value="AddHotspot" Text="Hotspot for {0}" />
+				<Item Value="Separator13" IsSeparator="True" />
+				<Item Value="MapSetupNew" Text="Map for {0}" />
+				<Item Value="GallerySetupNew" Text="Gallery for {0}" />
+				<Item Value="AddDataSheet" Text="Data Sheet for {0}" />
+				<Item Value="Separator6" IsSeparator="True" />
+				<Item Value="TourSetupNew" Text="Tour" />
+				<Item IsSeparator="True" />
+				<Item Text="Resource">
+					<Group>
+						<Item Value="CreateMarker" Text="Marker" />
+						<Item Value="CreateSymbol" Text="Symbol" />
+						<Item Value="CreateMarkerStyle" Text="Marker Style" />
+						<Item Value="CreateTooltipStyle" Text="Tooltip Style" />
+						<Item Value="CreateFontStyle" Text="Font Style" />
+						<Item Value="CreateColorScheme" Text="Color Scheme" />
+						<Item Value="CreateCategory" Text="Category" />
+					</Group>
+				</Item>
+			</Group>
+		</Item>
+		<Item GroupId="Recent" Text="Recent" >
+			<Group>
+			</Group>
+		</Item>
+		<Item Text="Account" >
+			<Group>
+				<Item Value="Profile" Text="Profile" />
+				<Item Value="Preferences" Text="Preferences" />
+				<Item Value="Welcome" Text="Welcome" />
+				<Item Value="Separator7" IsSeparator="True" />
+				<Item Value="UpgradeMembership" Text="Upgrade" />
+				<Item Value="BuyCustomServices" Text="Pay for Custom Services" Visible="false" />
+				<Item Value="BuyPlan" Text="Buy a MapsAlive Plan" Visbile="false"/>
+				<Item Value="BuyHotspots" Text="Buy More Hotspots" Visible="false" />
+				<Item Value="RenewMembership" Text="Renew Plan" />
+				<Item Value="OrderHistory" Text="Purchase History" />
+				<Item Value="Separator14" IsSeparator="True" />
+				<Item Value="Announcements" Text="Announcements" />
+				<Item Value="Separator8" IsSeparator="True" />
+				<Item GroupId="Admin" Text="Administration">
+					<Group>
+						<Item Value="ConfigStatus" Text="View Configuration Status" />
+						<Item Value="Separator9" IsSeparator="True" />
+						<Item Value="AppContent" Text="App Content" Visible="False" />
+						<Item Value="Separator10" IsSeparator="True" />
+						<Item Value="UserAccounts" Text="Users" Visible="False" />
+						<Item Value="RecoverPassword" Text="Recover Password" Visible="False" />
+						<Item Value="Separator11" IsSeparator="True" />
+						<Item Value="Reports" Text="Reports" Visible="False" />
+						<Item Value="ReportAccountStatistics" Text="Statistics" Visible="False" />
+						<Item Value="SignUp" Text="Add User" Visible="False" />
+					</Group>
+				</Item>
+				<Item IsSeparator="True" />
+				<Item Value="Logout" Text="Logout" />
+			</Group>
+		</Item>
+	</Group>
+</Menu>

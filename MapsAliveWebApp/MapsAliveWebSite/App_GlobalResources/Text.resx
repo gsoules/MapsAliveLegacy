@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ShowDirectoryLabel" xml:space="preserve">
+    <value>Show Directory</value>
+  </data>
+  <data name="LayoutBannerLabel" xml:space="preserve">
+    <value>Show Banner</value>
+  </data>
+  <data name="LayoutNavigationLabel" xml:space="preserve">
+    <value>Menu Location</value>
+  </data>
+  <data name="AllowUnbrandedTitleLabel" xml:space="preserve">
+    <value>Allow Banner Hiding</value>
+  </data>
+  <data name="HideCreatedWithMapsaliveTitleLabel" xml:space="preserve">
+    <value>Hide MapsAlive Link</value>
+  </data>
+  <data name="ExportTourDataLabel" xml:space="preserve">
+    <value>Export Tour Data</value>
+  </data>
+  <data name="UpdateExistingMarkersTitleLabel" xml:space="preserve">
+    <value>Update Existing Markers Appearance</value>
+  </data>
+  <data name="UseTitleAsTooltipLabel" xml:space="preserve">
+    <value>Use Title Attribute As Tooltip</value>
+  </data>
+  <data name="TreatPolygonsAsLines" xml:space="preserve">
+    <value>Treat Polygon Shapes As Lines</value>
+  </data>
+  <data name="HrefAttributeOptionLabel" xml:space="preserve">
+    <value>Href Attribute Options</value>
+  </data>
+  <data name="LayoutMenuStyleLabel" xml:space="preserve">
+    <value>Menu Style</value>
+  </data>
+  <data name="LayoutNoMenuLabel" xml:space="preserve">
+    <value>Hide Nav Button</value>
+  </data>
+  <data name="CustomerFooterLabel" xml:space="preserve">
+    <value>Footer Text</value>
+  </data>
+  <data name="ErrorTourNameInUse" xml:space="preserve">
+    <value>Another tour has that name</value>
+  </data>
+  <data name="ErrorTourNameRequired" xml:space="preserve">
+    <value>A tour name is required</value>
+  </data>
+  <data name="TourNameLabel" xml:space="preserve">
+    <value>Tour Name</value>
+  </data>
+  <data name="TourSamplesUser" xml:space="preserve">
+    <value>How much help would you like while you create this tour?</value>
+  </data>
+  <data name="NewPageType" xml:space="preserve">
+    <value>What kind of map would you like to add?</value>
+  </data>
+  <data name="PreviewNoMapImage" xml:space="preserve">
+    <value>Map image will appear here </value>
+  </data>
+  <data name="PreviewNoViewImage" xml:space="preserve">
+    <value>Photo will appear here</value>
+  </data>
+  <data name="PreviewViewDescriptionHelp" xml:space="preserve">
+    <value>Hotspot Text</value>
+  </data>
+  <data name="PreviewViewTitleHelp" xml:space="preserve">
+    <value>Hotspot Title</value>
+  </data>
+  <data name="MapPageTitle" xml:space="preserve">
+    <value>Map Editor</value>
+  </data>
+  <data name="PreviewFixedPageLayoutPageTitle" xml:space="preserve">
+    <value>Splitters</value>
+  </data>
+  <data name="PreviewPopupLayoutPageTitle" xml:space="preserve">
+    <value>Popup Splitter</value>
+  </data>
+  <data name="UploadMapPageTitle" xml:space="preserve">
+    <value>Choose Map Image</value>
+  </data>
+  <data name="TourNamePageTitle" xml:space="preserve">
+    <value>Tour Name</value>
+  </data>
+  <data name="TourOptionsPageTitle" xml:space="preserve">
+    <value>Tour Options</value>
+  </data>
+  <data name="TourManagerTitle" xml:space="preserve">
+    <value>Tour Manager</value>
+  </data>
+  <data name="MarkerPageTitle" xml:space="preserve">
+    <value>Marker Actions</value>
+  </data>
+  <data name="HomePageBrowserTitle" xml:space="preserve">
+    <value>{0} - MapsAlive</value>
+  </data>
+  <data name="MemberPageBrowserTitle" xml:space="preserve">
+    <value>Tour Builder - {0} [{1}]</value>
+  </data>
+  <data name="PreviewPageBrowserTitle" xml:space="preserve">
+    <value>Preview: {0}</value>
+  </data>
+  <data name="TourNavigatorTitle" xml:space="preserve">
+    <value>Tour Navigator</value>
+  </data>
+  <data name="HorizontalSpacingLabel" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="ShowSlideTitleLabel" xml:space="preserve">
+    <value>Show Hotspot Title</value>
+  </data>
+  <data name="PopupSlideXLabel" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="PopupSlideYLabel" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="PopupSlideBackgroundColor" xml:space="preserve">
+    <value>Background Color</value>
+  </data>
+  <data name="VerticalSpacingLabel" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="LayoutMarginBottomLabel" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="LayoutMarginLeftLabel" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="LayoutMarginRightLabel" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="LayoutMarginTopLabel" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="NumberInRangeRequired" xml:space="preserve">
+    <value>A number between {0} and {1} is required</value>
+  </data>
+  <data name="NumberInRangeOrBlankRequired" xml:space="preserve">
+    <value>Blank or a number between {0} and {1} is required</value>
+  </data>
+  <data name="HexColorRequired" xml:space="preserve">
+    <value>A color value is required</value>
+  </data>
+  <data name="ShowSlideListLabel" xml:space="preserve">
+    <value>Show Hotspot Dropdown List In Title Bar</value>
+  </data>
+  <data name="ShowSlideTitlesInMenuLabel" xml:space="preserve">
+    <value>Show Hotspot Titles In Left Menu</value>
+  </data>
+  <data name="OptionalStep" xml:space="preserve">
+    <value> (optional).</value>
+  </data>
+  <data name="TourExplorerMessageHasNoTours" xml:space="preserve">
+    <value>You have no tours yet</value>
+  </data>
+  <data name="BrowserTitleLabel" xml:space="preserve">
+    <value>Browser Title</value>
+  </data>
+  <data name="ClickActionLabel" xml:space="preserve">
+    <value>Click Action</value>
+  </data>
+  <data name="ErrorTourPageNameInUse" xml:space="preserve">
+    <value>Another map or data sheet has that name</value>
+  </data>
+  <data name="ErrorTourPageNameRequired" xml:space="preserve">
+    <value>A map name is required</value>
+  </data>
+  <data name="ErrorSlideListInstructionsRequired" xml:space="preserve">
+    <value>The instructions cannot be blank</value>
+  </data>
+  <data name="ErrorSlideIdRequired" xml:space="preserve">
+    <value>A hotspot Id is required</value>
+  </data>
+  <data name="ErrorPageNameRequired" xml:space="preserve">
+    <value>A Map Id is required</value>
+  </data>
+  <data name="ErrorIdContainsInvalidCharacters" xml:space="preserve">
+    <value>The Id field contains invalid characters. These characters are not allowed: \ / : * ? " &lt; &gt; |</value>
+  </data>
+  <data name="ErrorViewTitleRequired" xml:space="preserve">
+    <value>A hotspot title is required</value>
+  </data>
+  <data name="DataSheetNameRequired" xml:space="preserve">
+    <value>A data sheet name is required</value>
+  </data>
+  <data name="ErrorSlideIdInUse" xml:space="preserve">
+    <value>The Hotspot Id you provided is being used by another hotspot on this map</value>
+  </data>
+  <data name="ErrorPageIdInUse" xml:space="preserve">
+    <value>The Id you provided is being used by another map, data sheet, or gallery in this tour</value>
+  </data>
+  <data name="MapImageLabel" xml:space="preserve">
+    <value>Map Image</value>
+  </data>
+  <data name="ImportChoicesLabel" xml:space="preserve">
+    <value>What To Import</value>
+  </data>
+  <data name="ImportSlidesPageTitle" xml:space="preserve">
+    <value>Import Photos</value>
+  </data>
+  <data name="ImportImagesFileLabel" xml:space="preserve">
+    <value>Import Photos</value>
+  </data>
+  <data name="ImportMarkerShapesFileLabel" xml:space="preserve">
+    <value>Import Marker Shapes</value>
+  </data>
+  <data name="ImportContentFileLabel" xml:space="preserve">
+    <value>Import Content</value>
+  </data>
+  <data name="ImportRoutesFileLabel" xml:space="preserve">
+    <value>Import Routes</value>
+  </data>
+  <data name="ImportAccountsFileLabel" xml:space="preserve">
+    <value>Import Accounts</value>
+  </data>
+  <data name="SymbolImageLabel" xml:space="preserve">
+    <value>Symbol Image</value>
+  </data>
+  <data name="SymbolNameLabel" xml:space="preserve">
+    <value>Symbol Name</value>
+  </data>
+  <data name="CategoryCodeLabel" xml:space="preserve">
+    <value>Category Code</value>
+  </data>
+  <data name="CategoryTitleLabel" xml:space="preserve">
+    <value>Category Title</value>
+  </data>
+  <data name="ColorSchemeNameLabel" xml:space="preserve">
+    <value>Color Scheme Name</value>
+  </data>
+  <data name="FontStyleNameLabel" xml:space="preserve">
+    <value>Font Style Name</value>
+  </data>
+  <data name="MarkerGotoPageLabel" xml:space="preserve">
+    <value>Map, Gallery, or Data Sheet</value>
+  </data>
+  <data name="MarkerLinkToUrlLabel" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="MarkerLinkToUrlPopupLabel" xml:space="preserve">
+    <value>Open URL in New Window</value>
+  </data>
+  <data name="PageNameLabel" xml:space="preserve">
+    <value>Map Name</value>
+  </data>
+  <data name="PageOptionsLabel" xml:space="preserve">
+    <value>Show This Map First</value>
+  </data>
+  <data name="TourExplorerLabel" xml:space="preserve">
+    <value>Tours</value>
+  </data>
+  <data name="PageTitlePage" xml:space="preserve">
+    <value>MapsAlive Page</value>
+  </data>
+  <data name="PageTitleLabel" xml:space="preserve">
+    <value>Map Title</value>
+  </data>
+  <data name="ShowInstructionsLabel" xml:space="preserve">
+    <value>Show Help for this Map</value>
+  </data>
+  <data name="InstructionsTextLabel" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="MapCanZoomLabel" xml:space="preserve">
+    <value>Enable MapZoom</value>
+  </data>
+  <data name="MarkerJavascriptLabel" xml:space="preserve">
+    <value>JavaScript</value>
+  </data>
+  <data name="RolloverActionLabel" xml:space="preserve">
+    <value>Mouseover Action</value>
+  </data>
+  <data name="SelectSlideOptionsLabel" xml:space="preserve">
+    <value>Show this hotspot's content when:</value>
+  </data>
+  <data name="SelectSlideOnRolloverLabel" xml:space="preserve">
+    <value>Mouse moves over marker</value>
+  </data>
+  <data name="SelectSlideOnClickLabel" xml:space="preserve">
+    <value>Marker is clicked</value>
+  </data>
+  <data name="SelectSlideNeverLabel" xml:space="preserve">
+    <value>Never</value>
+  </data>
+  <data name="RolloutActionLabel" xml:space="preserve">
+    <value>Mouseout Action</value>
+  </data>
+  <data name="RunSlideShowLabel" xml:space="preserve">
+    <value>Run Slide Show When Map Loads</value>
+  </data>
+  <data name="AccountPageStatusTitle" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="AccountPageTourExplorerTitle" xml:space="preserve">
+    <value>Tour Library</value>
+  </data>
+  <data name="AccountPagePurchaseHistoryTitle" xml:space="preserve">
+    <value>Purchase History</value>
+  </data>
+  <data name="Address1Label" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="AdminAdminTitle" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="AppContentTitle" xml:space="preserve">
+    <value>Application Content</value>
+  </data>
+  <data name="ButtonUpload" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="BuyCreditsLeftBoxHeader" xml:space="preserve">
+    <value>Credit Card Information</value>
+  </data>
+  <data name="BuyPageTitle" xml:space="preserve">
+    <value>MapsAlive - Checkout</value>
+  </data>
+  <data name="BuyReceiptHeader" xml:space="preserve">
+    <value>Thank you for your order</value>
+  </data>
+  <data name="BuyReceiptOrderInformation" xml:space="preserve">
+    <value>Order Information</value>
+  </data>
+  <data name="BuyReceiptPaymentInformation" xml:space="preserve">
+    <value>Payment Information</value>
+  </data>
+  <data name="BuyReceiptQuestions" xml:space="preserve">
+    <value>If you have questions about this order please send email to </value>
+  </data>
+  <data name="BuyReceiptReceiptMessage" xml:space="preserve">
+    <value>This receipt information has been emailed to </value>
+  </data>
+  <data name="BuyReceiptThankYou" xml:space="preserve">
+    <value>Thank you!</value>
+  </data>
+  <data name="BuyReceiptTotal1" xml:space="preserve">
+    <value>A total of </value>
+  </data>
+  <data name="BuyReceiptTotal2" xml:space="preserve">
+    <value>has been charged to your credit card.</value>
+  </data>
+  <data name="BuyReceiptTotal3" xml:space="preserve">
+    <value>The charge will appear on your statement as www.mapsalive.com.</value>
+  </data>
+  <data name="CardExpirationLabel" xml:space="preserve">
+    <value>Expiration Date:</value>
+  </data>
+  <data name="CardNumberLabel" xml:space="preserve">
+    <value>Card Number:</value>
+  </data>
+  <data name="CardVerificationLabel" xml:space="preserve">
+    <value>Card Verification #:</value>
+  </data>
+  <data name="CityLabel" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="ConfirmPasswordLabel" xml:space="preserve">
+    <value>Confirm Password:</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>Contact Name:</value>
+  </data>
+  <data name="ContactUsLabel" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>© 2008 AvantLogic Corporation</value>
+  </data>
+  <data name="CountryLabel" xml:space="preserve">
+    <value>Country:</value>
+  </data>
+  <data name="CustomerFirstLastNameLabel" xml:space="preserve">
+    <value>First and Last Name:</value>
+  </data>
+  <data name="EmailLabel" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="UserIdLabel" xml:space="preserve">
+    <value>User Id:</value>
+  </data>
+  <data name="ErrorMarkerNameInUse" xml:space="preserve">
+    <value>Another marker has that name</value>
+  </data>
+  <data name="ErrorSymbolNameInUse" xml:space="preserve">
+    <value>Another symbol has that name</value>
+  </data>
+  <data name="ErrorCategoryCodeInUse" xml:space="preserve">
+    <value>Another Category has that code</value>
+  </data>
+  <data name="ErrorMarkerNameRequired" xml:space="preserve">
+    <value>A marker name is required</value>
+  </data>
+  <data name="ErrorMarkerTextRequired" xml:space="preserve">
+    <value>Text is required for a text marker</value>
+  </data>
+  <data name="ErrorSymbolNameRequired" xml:space="preserve">
+    <value>A symbol name is required</value>
+  </data>
+  <data name="ErrorCategoryCodeRequired" xml:space="preserve">
+    <value>A catetory code is required</value>
+  </data>
+  <data name="ErrorCategoryTitleRequired" xml:space="preserve">
+    <value>A catetory title is required</value>
+  </data>
+  <data name="LowCreditsEmailSubject" xml:space="preserve">
+    <value>MapsAlive: Account Status Update (ma-03)</value>
+  </data>
+  <data name="MarkerBackgroundShapeLabel" xml:space="preserve">
+    <value>Shape</value>
+  </data>
+  <data name="SymbolLocationOptionLabel" xml:space="preserve">
+    <value>Symbol Location</value>
+  </data>
+  <data name="MarkerNormalSymbolLabel" xml:space="preserve">
+    <value>Normal Symbol</value>
+  </data>
+  <data name="MarkerSelectedSymbolLabel" xml:space="preserve">
+    <value>Selected Symbol</value>
+  </data>
+  <data name="NormalFillColorLabel" xml:space="preserve">
+    <value>Normal Fill Color</value>
+  </data>
+  <data name="SelectedFillColorLabel" xml:space="preserve">
+    <value>Selected Fill Color</value>
+  </data>
+  <data name="NormalFillColorOpacityLabel" xml:space="preserve">
+    <value>Normal Fill Color Opacity</value>
+  </data>
+  <data name="SelectedFillColorOpacityLabel" xml:space="preserve">
+    <value>Selected Fill Color Opacity</value>
+  </data>
+  <data name="NormalLineColorLabel" xml:space="preserve">
+    <value>Normal Line Color</value>
+  </data>
+  <data name="SelectedLineColorLabel" xml:space="preserve">
+    <value>Selected Line Color</value>
+  </data>
+  <data name="NormalLineColorOpacityLabel" xml:space="preserve">
+    <value>Normal Line Color Opacity</value>
+  </data>
+  <data name="SelectedLineColorOpacityLabel" xml:space="preserve">
+    <value>Selected Line Color Opacity</value>
+  </data>
+  <data name="NewOrderEmailSubject" xml:space="preserve">
+    <value>Your Order with MapsAlive.com</value>
+  </data>
+  <data name="NewRegistrationEmailSubject" xml:space="preserve">
+    <value>Welcome to MapsAlive!</value>
+  </data>
+  <data name="NewsletterOptIn" xml:space="preserve">
+    <value>Please send the MapsAlive newsletter to the email address above.</value>
+  </data>
+  <data name="NoScriptWarning" xml:space="preserve">
+    <value>This page requires JavaScript</value>
+  </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="PasswordNotMailedText" xml:space="preserve">
+    <value>There is no MapsAlive account with that email address.</value>
+  </data>
+  <data name="PasswordSentText" xml:space="preserve">
+    <value>Your password has been sent to the email address above.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="RememberMeLabel" xml:space="preserve">
+    <value> Remember me on this computer.</value>
+  </data>
+  <data name="RetrievePassword" xml:space="preserve">
+    <value>I forgot my password</value>
+  </data>
+  <data name="RetrievePasswordText" xml:space="preserve">
+    <value>Type in your email address to have your password sent to you.</value>
+  </data>
+  <data name="StateLabelBuy" xml:space="preserve">
+    <value>State/Province:</value>
+  </data>
+  <data name="TermsOfServiceLabel" xml:space="preserve">
+    <value>Terms Of Service</value>
+  </data>
+  <data name="UserAccountsTitle" xml:space="preserve">
+    <value>User Accounts</value>
+  </data>
+  <data name="ZipCodeLabel" xml:space="preserve">
+    <value>Zip/Postal Code:</value>
+  </data>
+  <data name="LayoutMenuWidthLabel" xml:space="preserve">
+    <value>Left Menu Width</value>
+  </data>
+  <data name="BodyMarginLabel" xml:space="preserve">
+    <value>Margin</value>
+  </data>
+  <data name="LayoutMenuScrollsLabel" xml:space="preserve">
+    <value>Left Menu Scrolls</value>
+  </data>
+  <data name="CoordinatesLabel" xml:space="preserve">
+    <value>Coordinates</value>
+  </data>
+  <data name="RectangleHeightLabel" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="RectangleSizeLabel" xml:space="preserve">
+    <value>Rectangle Size</value>
+  </data>
+  <data name="RectangleWidthLabel" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="MarkerLineWidthLabel" xml:space="preserve">
+    <value>Line Thickness</value>
+  </data>
+  <data name="SymbolLocationXLabel" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="SymbolLocationYLabel" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="AutoMapZoomLabel" xml:space="preserve">
+    <value>Set MapZoom Automatically</value>
+  </data>
+  <data name="BannerOptionsTitle" xml:space="preserve">
+    <value>Banner Image</value>
+  </data>
+  <data name="DirectoryOptionsTitle" xml:space="preserve">
+    <value>Directory Options</value>
+  </data>
+  <data name="ErrorAutoPageLayoutDisabled" xml:space="preserve">
+    <value>Auto Layout is disabled.\n\nTo enable it, click Enable Auto Layout.</value>
+  </data>
+  <data name="BannerImageLabel" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="BannerUrlLabel" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="BannerTitleLabel" xml:space="preserve">
+    <value>Tooltip Text</value>
+  </data>
+  <data name="BannerUrlOpensWindowLabel" xml:space="preserve">
+    <value>Open URL in New Window</value>
+  </data>
+  <data name="AdminReportsTitle" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="BuyException" xml:space="preserve">
+    <value>An unexpected error occurred.  Your card was not charged.  The error has been reported to MapsAlive support.  We apologize for the inconvenience.</value>
+  </data>
+  <data name="MarkerBlinkLabel" xml:space="preserve">
+    <value>Marker Blink</value>
+  </data>
+  <data name="VisitedMarkerOpacityLabel" xml:space="preserve">
+    <value>Visited Marker Opacity</value>
+  </data>
+  <data name="MapZoomSaveStateLabel" xml:space="preserve">
+    <value>Remember Map State</value>
+  </data>
+  <data name="MapZoomEnabledLabel" xml:space="preserve">
+    <value>Enable MapZoom</value>
+  </data>
+  <data name="MapZoomInsetSizeLabel" xml:space="preserve">
+    <value>Inset Size</value>
+  </data>
+  <data name="MapZoomInsetLocationLabel" xml:space="preserve">
+    <value>Inset Location</value>
+  </data>
+  <data name="InstructionsBackgroundColorLabel" xml:space="preserve">
+    <value>Background Color</value>
+  </data>
+  <data name="InstructionsTextColorLabel" xml:space="preserve">
+    <value>Text Color</value>
+  </data>
+  <data name="InstructionsTitleLabel" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="InstructionsWidthLabel" xml:space="preserve">
+    <value>Max Width</value>
+  </data>
+  <data name="TourSampleImagesLabel" xml:space="preserve">
+    <value>What kind of sample images would you like to see?</value>
+  </data>
+  <data name="TourSlideDisplayLabel" xml:space="preserve">
+    <value>Choose How Hotspots Display</value>
+  </data>
+  <data name="BannerTitleMapsAliveTopics" xml:space="preserve">
+    <value>Learning Center for Interactive Maps</value>
+  </data>
+  <data name="ImageUploadError" xml:space="preserve">
+    <value>The file you tried to upload does not appear to be an image. MapsAlive can recognize these image file formats: JPEG, GIF, TIFF, PNG, and BMP. If your image is in a PDF, SmartDraw, Visio, or other type of file, you can export it as a JPEG file and then upload that file to MapsAlive.</value>
+  </data>
+</root>

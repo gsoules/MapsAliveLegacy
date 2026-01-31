@@ -1,0 +1,105 @@
+<%@ Master Language="C#"
+	AutoEventWireup="true"
+	CodeFile="MemberPage.master.cs"
+	Inherits="Masters_MemberPage"
+%>
+	
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<%@ Register Assembly="App_Code\ServerControls\MemberPageHeader.cs" TagPrefix="AvantLogic" Namespace="AvantLogic.MapsAlive" %>
+<%@ Register Assembly="App_Code\ServerControls\StatusBox.cs" TagPrefix="AvantLogic" Namespace="AvantLogic.MapsAlive" %>
+<%@ Register TagName="Nag" TagPrefix="uc" Src="~\Controls\Nag.ascx" %>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head runat="server">
+		<title>MapsAlive Tour Editor</title>
+		<link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+        <script src="../Runtime/Vex/vex.combined.min.js"></script>
+        <script>vex.defaultOptions.className = 'vex-theme-os'</script>
+        <link rel="stylesheet" href="../Runtime/Vex/vex.css" />
+        <link rel="stylesheet" href="../Runtime/Vex/vex-theme-os.css" />
+		<link href="../Styles/Style.css" rel="stylesheet" type="text/css" />
+        <%--    
+        <script async src='https://www.googletagmanager.com/gtag/js?id=G-9MYHNCT1Z5'></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-9MYHNCT1Z5');
+        </script>
+		<telerik:RadCodeBlock runat="server"><%= EmitAnalyticsScriptForTourBuilder() %></telerik:RadCodeBlock>
+        --%>
+	</head>
+	<body onkeypress='return maOnKeyPress(event);'>
+		<asp:Panel ID="NagPanel" runat="server" Visible="false" style="position:absolute;left:420px;top:8px;z-index:5000;">
+			<uc:Nag Id="Nag" runat="server" />
+		</asp:Panel>
+		
+		<form runat="server">
+            <asp:ScriptManager ID="ScriptManager" runat="server" />
+            <asp:HiddenField ID="PostId" runat="server" />
+			
+			<AvantLogic:MemberPageHeader ID="PageHeaderControl" runat="server" CssClass="memberPageControlsHeader" />
+			
+			<div class="memberPageMenu">
+				<telerik:RadMenu
+					ID="TopMenu"	
+					runat="server"
+					Flow="Horizontal"
+					Width="100%"
+					ExpandDelay="100"
+					CollapseDelay="500"
+					CollapseAnimation-Type="None"
+					ExpandAnimation-Type="None"
+					EnableScreenBoundaryDetection="true"
+					Skin="Default"
+					OnClientItemClicking="maOnEventMenuItemClicking"
+					OnClientItemClicked="maOnEventMenuItemClicked"
+					/>
+			</div>
+			
+			<div id="PageContent">
+				<div class="memberPageContentLeft">
+					<asp:Panel ID="AllToursPanel" runat="server">
+						<div id="AllToursListHeader" class="panelBarCollapsed" onclick="maTogglePanelBar('AllToursListHeader', 'AllToursList');">All Tours</div>
+						<div id="AllToursList" class="tourListPanel" style="display:none;">
+							<AvantLogic:TourList ID="TourList" runat="server" />
+						</div>
+					</asp:Panel>
+					
+					<asp:Panel ID="CurrentTourPanel" runat="server">
+						<div class="panelBar" style="margin-top:4px;">
+                            <div>Tour Navigator</div>
+                            <div ID="TourPanelIcons" runat="server" visible="false">
+                                <img ID="EditHotspotIcon" runat="server" src="../Images/EditHotspot.svg" onclick="maOnEventSaveAndTransfer('/Members/EditHotspotContent.aspx');" title="Edit Current Hotspot" style="width:18px;height:18px;">
+                                <img src="../Images/AddHotspot.svg" onclick="maOnEventSaveAndTransfer('/Members/AddTourView.ashx');" title="Add New Hotspot" style="width:18px;height:18px;">
+                                
+                                <%-- The rev number was hard-coded here when support was added for the shape editor to force Map.aspx to get fetched --%>
+                                <%-- fresh from the server. It should only need to be updated if there are additional significant changes to Map.aspx. --%>
+                                <img src="../Images/EditMap.svg" onclick="maOnEventSaveAndTransfer('/Members/Map.aspx?rev=4227');" title="Map Editor" style="width:18px;height:18px;">
+                            </div>
+						</div>
+						<div class="tourNavigatorPanel">
+							<AvantLogic:GroupNavigator ID="TourNavigator" runat="server" />
+						</div>
+					</asp:Panel>
+					
+				</div>
+				<div class="memberPageContentRight">
+					<AvantLogic:StatusBox ID="StatusBox" runat="server" />
+					<asp:Panel ID="SpecialMessagePanel" runat="server" Visible="false">
+						<asp:Label ID="SpecialMessage" runat="server" />
+					</asp:Panel>
+					<asp:contentplaceholder id="ContentBody" runat="server" />
+				</div>
+			</div>
+		</form>
+		<noscript><div class="noScriptWarningMemberPage"><% =Resources.Text.NoScriptWarning%></div></noscript>
+		
+		<%-- Quick Help box. --%>
+		<div id="QuickHelp"></div>
+		
+		<%-- Preview box --%>
+		<div id="QuickPreview"></div>
+	</body>
+</html>

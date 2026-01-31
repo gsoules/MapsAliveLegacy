@@ -1,0 +1,14 @@
+MapsAlive
+TourBuilder
+MapZoom
+FAQ
+Mouseout
+JavaScript
+popup
+mouseout
+popups
+hotspot
+hotspots
+URL
+standalone
+Tooltip

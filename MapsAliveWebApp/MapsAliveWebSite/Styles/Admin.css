@@ -1,0 +1,86 @@
+﻿/*  This file is used only to style content in the Tiny MCE editor on the Content Manager page.
+	These same styles are defined in Style.css and it is the definitions there that are acually
+    used by the content on  Tour Builder pages. Keep the two versions in sync if you also want
+    to be able to see the style while editing AppContent.
+*/
+ 
+body 
+{
+	color:#555555;
+	font-family:Arial, Helvetica, Verdana, Sans-Serif;
+	font-size:11px;
+	font-weight:normal;
+	line-height:15px;
+	text-align: left;
+	margin:0px;
+}
+
+.featuresSubhead {
+	color:#555555;
+	font-family:Arial, Helvetica, Verdana, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:left;
+	margin-bottom:2px;
+}
+
+.menuReference 
+{
+	color:#365e8f;
+	font-size:11px;
+	font-weight:bold;
+}
+
+.planPlus
+{
+	color:#55812a;
+	font-family:Arial, Verdana, Helvetica, Sans-Serif;
+	font-size:9px;
+	font-weight:bold;
+}
+
+.planPro
+{
+	color:#55812a;
+	font-family:Arial, Verdana, Helvetica, Sans-Serif;
+	font-size:9px;
+	font-weight:bold;
+}
+
+ol.faqSteps
+{
+	margin-top:0px;
+	margin-bottom:8px;
+	margin-left:0px;
+	padding-left:20px;
+}
+
+ol.faqSteps li
+{
+	margin-top:6px;
+}
+
+ul.faqSteps
+{
+	margin-top:8px;
+	margin-bottom:8px;
+	margin-left:0px;
+	padding-left:32px;
+}
+
+ul.faqSteps li
+{
+	margin-top:4px;
+}
+
+ul.bullets
+{
+	margin-top:12px;
+	margin-bottom:12px;
+	margin-left:32px;
+}
+
+ul.bullets li
+{
+	margin-top:4px;
+}

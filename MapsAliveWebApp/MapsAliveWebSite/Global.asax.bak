@@ -1,0 +1,203 @@
+<%@ Application Language="C#" %>
+
+<script runat="server">
+
+	void Application_Start(object sender, EventArgs e)
+	{
+		try
+		{
+			LogEvent("Application_Start");
+
+			// Read and validate the configuration settings. If there are any problems
+			// they will be detected and reported by the Session_Start handler.		
+			Config.Initialize();
+
+			// Add our own listener so that we can control how asserts are handled.
+			System.Diagnostics.Debug.Listeners.Clear();
+			System.Diagnostics.Debug.Listeners.Add(new AssertHandler());
+
+            // Report application start only for the production server.
+            bool isProductionServer = !App.DeveloperMode && !App.WebSiteUrl.Contains("beta");
+            if (isProductionServer)
+                Utility.SendEmailToAdmin("Application_Start V4 (ma-02)", DateTime.Now.ToLongTimeString());
+        }
+        catch (Exception ex)
+        {
+            LogEvent("Application_Start Exception: " + ex.Message);
+        }
+    }
+
+	void Application_End(object sender, EventArgs e)
+	{
+		LogEvent("Application_End");
+	}
+
+    void Application_BeginRequest(object sender, EventArgs e)
+    {
+        string text = Request.Url.LocalPath;
+        if (logRequest(text))
+            LogEvent("Request " + text);
+    }
+
+    private bool logRequest(string text)
+    {
+        if (text.Contains("Thumbnail.ashx"))
+            return false;
+        if (text.Contains("PageRenderer.ashx"))
+            return false;
+        return true;
+    }
+
+	void Application_Disposed(object sender, EventArgs e)
+	{
+		LogEvent("Application_Disposed");
+	}
+
+	void Application_Error(object sender, EventArgs e)
+	{
+		try
+		{
+			// Avoid getting into an infinite loop trying to handle and report a database error.		
+			if (MapsAliveDatabase.NotConnected)
+				return;
+
+			Exception ex = Server.GetLastError().GetBaseException();
+
+			if (ex is HttpException)
+			{
+				HttpException httpException = (HttpException)ex;
+				int errorCode = httpException.GetHttpCode();
+				if (errorCode == 404)
+					return;
+
+				Exception baseException = ex.GetBaseException();
+				if (baseException is System.Web.HttpRequestValidationException)
+				{
+					// HTML characters were detected in an input string which could mean someone
+					// is trying to do script injection.  If it occurs on the registration page,
+					// just redirect to the home page.  If it happens on any other page, redisplay
+					// the page.  Ultimately we need to encode these characters to a) avoid the
+					// the problem and b) allow people to use those characters.  This solution at
+					// least avoids sending the user off to the Unexpected Error page.
+					string targetPage;
+					if (Request.FilePath.Contains("SignUp.aspx"))
+						targetPage = "~";
+					else
+						targetPage = Request.FilePath;
+					MapsAliveState.Persist(MapsAliveObjectType.RequestValidationErrorHandled, true);
+
+					// See: http://blogs.msdn.com/tmarq/archive/2009/06/25/correct-use-of-system-web-httpresponse-redirect.aspx.
+					ClearErrorAndRedirect(targetPage);
+					return;
+				}
+			}
+
+			HttpRequest request = null;
+			HttpContext context = HttpContext.Current;
+			if (context != null)
+				request = context.Request;
+
+			if (ex.Message.StartsWith("Invalid viewstate"))
+			{
+				// Ignore invalid viewstate errors. We have only seen them occur dues to browser bugs 
+				// or when a browser client is deliberately mucking with the viewstate e.g. Trustkeeper tests.
+				return;
+			}
+			else if ((ex.Message.StartsWith("Invalid character in a Base-64 string") || ex.Message.StartsWith("Invalid length for a Base-64 char array")) && !Utility.UserIsLoggedIn)
+			{
+				// These errors can occur when someone deliberately alters the view state when hitting the site.
+				// The TrustWave tests do this and we have seen it happen occasionally at other times. We are
+				// now ignoring them unless it is happening to a logged in user.
+				return;
+			}
+			else if (ex.Message.StartsWith("Illegal characters in path"))
+			{
+				// This can occur with a URL like this: /Public/"MembershipOptions.aspx (there is a double quote in the path)
+				ClearErrorAndRedirect("~");
+				return;
+			}
+
+			LogApplicationError(ex);
+
+			Utility.ReportException("Application_Error", ex);
+		}
+		catch
+		{
+		}
+	}
+
+	private void ClearErrorAndRedirect(string targetPage)
+	{
+		Server.ClearError();
+		Response.Redirect(targetPage, false);
+		Context.ApplicationInstance.CompleteRequest();
+	}
+
+	void Session_Start(object sender, EventArgs e)
+	{
+		LogEvent("Session_Start " + Session.SessionID);
+
+		if (!App.Installed)
+		{
+			Response.Redirect(App.ConfigPage);
+			return;
+		}
+
+		if (MapsAliveDatabase.NotConnected)
+		{
+			// There is no connection to the database. Continue normally and let exception
+			// handlers do the right thing. If it's a temporary outage, a user might not
+			// even be affected by the problem. If the problem occurs during app start up,
+			// the Unexpected Error page will display and report that there is no DB. If the
+			// app had already been running and the database goes down briefly, the home
+			// pages (non TourBuidler) will operate normally (with a few exceptions) because
+			// the app content data is cached in application memory.	
+			return;
+		}
+
+		if (User.Identity.IsAuthenticated)
+			Utility.UpdateUserLastActivityDate();
+	}
+
+	void Session_End(object sender, EventArgs e)
+	{
+		// Code that runs when a session ends. 
+		// Note: The Session_End event is raised only when the sessionstate mode
+		// is set to InProc in the Web.config file. If session mode is set to StateServer 
+		// or SQLServer, the event is not raised.
+		LogEvent("Session_End " + Session.SessionID);
+	}
+
+	void LogEvent(string text)
+	{
+		// Ideally the log file string would come from MapsAliveConfig.LogFile but this Global.asax
+        // method can be called at times when the config information is not available. As such, the
+        // string must be coded both here and in the MapsAlive.config file.
+		string logFileNamePattern = "C:\\AvantLogic\\MapsAliveWebApp\\logs\\{0}-DELL7.log";
+
+        Utility.WriteToLogFile(text, logFileNamePattern, false);
+	}
+
+	void LogApplicationError(Exception ex)
+	{
+		string msg = "Application_Error\n";
+		if (ex == null)
+		{
+			msg = string.Format("{0}: {1}", ex.GetType().Name, ex.Message);
+		}
+		else
+		{
+			msg += "EXCEPTION MESSAGE: " + (ex.Message.Length > 0 ? ex.Message : "<no message>") + "\n";
+			if (ex.InnerException != null && ex.InnerException.Message != null && ex.InnerException.Message.Length != 0 && ex.InnerException.Message != ex.Message)
+			{
+				// Only show the inner exception message if exists and is different than the exception message.
+				msg += "INNER EXCEPTION MESSAGE: " + ex.InnerException.Message + "\n";
+			}
+
+			msg += "\nEXCEPTION STACK TRACE:\n" + ex.StackTrace + "\n";
+		}
+
+		LogEvent(msg);
+	}
+
+</script>

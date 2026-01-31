@@ -1,0 +1,14 @@
+Hello {0},
+
+Welcome to MapsAlive! Your {1} account is valid until {2}.
+
+To login to your account, go to https://mapsalive.com and click the Login button in the menu.
+
+Login: {3}
+Account #: {5}
+
+Questions? Please send email to support@mapsalive.com.
+
+Thank You,
+The MapsAlive Team
+support@mapsalive.com

@@ -1,0 +1,22 @@
+Hello {0},
+
+This is a reminder that time on your MapsAlive account is running out.
+
+Your account status as of {1:d} is as follows:
+	
+	Account #: {4}
+	Email: {2}
+
+	Days remaining: {3}
+	
+When the time on your account runs out, your tours will be deactivated.
+
+To purchase more time Login to your account and choose Account > Renew Plan from the Tour Builder menu.
+
+You can renew for just the number of months you need to transition to another solution.
+
+MapsAlive will be discontinued effective January 1, 2027. To learn more, read the announcment by choosing Account > Announcements from the Tour Builder menu.
+
+Thank you,
+The MapsAlive Team
+https://mapsalive.com

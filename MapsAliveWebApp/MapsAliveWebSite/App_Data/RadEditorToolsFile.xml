@@ -1,0 +1,115 @@
+<root>
+	<tools>
+		<tool name="FontName"/>
+		<tool name="RealFontSize"/>
+		<tool name="AjaxSpellCheck" />
+		<tool name="FindAndReplace" shortcut="CTRL+F" />
+		<tool separator="true" />
+		<tool name="LinkManager"/>
+		<tool name="Unlink"/>
+		<tool name="InsertSnippet" />
+	</tools>
+	<tools>
+		<tool separator="true" />
+		<tool name="Bold" shortcut="CTRL+B"/>
+		<tool name="Italic" shortcut="CTRL+I"/>
+		<tool name="Underline" shortcut="CTRL+U"/>
+		<tool name="StrikeThrough"/>
+		<tool separator="true" />
+		<tool name="ForeColor" />
+		<tool name="BackColor" />
+		<tool separator="true" />
+		<tool name="InsertSymbol" />
+		<tool separator="true" />
+		<tool name="JustifyLeft" />
+		<tool name="JustifyCenter" />
+		<tool name="JustifyFull" />
+		<tool separator="true" />
+		<tool name="InsertHorizontalRule" />
+		<tool name="InsertOrderedList" />
+		<tool name="InsertUnorderedList" />
+		<tool separator="true" />
+		<tool name="PastePlainText" />
+	</tools>	
+	<symbols>
+		<symbol value="\u20AC" />
+		<symbol value="\u00A2" />
+		<symbol value="\u00A3" />
+		<symbol value="\u00A5" />
+		<symbol value="\u00A4" />
+		<symbol value="\u00A9" />
+		<symbol value="\u00AE" />
+		<symbol value="\u2122" />
+		
+		<symbol value="\u00B1" />
+		<symbol value="\u2260" />
+		<symbol value="\u2248" />
+		<symbol value="\u2264" />
+		<symbol value="\u2265" />
+		<symbol value="\u00F7" />
+		<symbol value="\u00D7" />
+		<symbol value="\u221E" />
+		
+		<symbol value="\u00BD" />
+		<symbol value="\u00BC" />
+		<symbol value="\u00BE" />
+		<symbol value="\u00B2" />
+		<symbol value="\u00B3" />
+		<symbol value="\u2030" />
+		<symbol value="\u00B6" />
+		<symbol value="\u00A7" />
+		
+		<symbol value="\u2013" />
+		<symbol value="\u2014" />
+		<symbol value="\u00B0" />
+		<symbol value="\u00AB" />
+		<symbol value="\u00BB" />
+		<symbol value="\u00B7" />
+		<symbol value="\u2022" />
+		<symbol value="\u2020" />
+		
+		<symbol value="\u2018" />
+		<symbol value="\u2019" />
+		<symbol value="\u201C" />
+		<symbol value="\u201D" />
+		<symbol value="\u00Bf" />
+		<symbol value="\u00A1" />
+		<symbol value="\u00B5" />
+		<symbol value="\u2211" />
+	</symbols>
+
+	<snippets>
+		<snippet name="image-macro">
+			<![CDATA[
+				[image-macro hotspot-id:hotspotId; map-id:mapId; width:imageWidth; height:imageHeight]
+			]]>
+		</snippet>
+		<snippet name="linkto-macro">
+			<![CDATA[
+					[linkto-macro map-id:mapId; hotspot-id:hotspotId; link-text:linkText; tooltip:tooltipText]
+			]]>
+		</snippet>
+		<snippet name="flash-macro">
+			<![CDATA[
+					[flash-macro src:URL; width:videoWidth; height:videoHeight] 
+			]]>
+		</snippet>
+		<snippet name="iframe-macro">
+			<![CDATA[
+					[iframe-macro src:URL; width:iframeWidth; height:iframeHeight]
+			]]>
+		</snippet>
+		<snippet name="tour-macro">
+			<![CDATA[
+					[tour-macro tour:tourNumber; src:URL]
+			]]>
+		</snippet>
+	</snippets>
+
+	<links></links>
+	<snippets></snippets>		
+	<symbols></symbols>	
+	<fontNames>	</fontNames>	
+	<fontSizes></fontSizes>
+	<colors></colors>		
+</root>

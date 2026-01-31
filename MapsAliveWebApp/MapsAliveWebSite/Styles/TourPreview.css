@@ -1,0 +1,298 @@
+﻿body
+{
+	margin:auto;
+	position:relative;
+}
+
+.maPreview,
+.maPreviewMain,
+.maPreviewAdvisor,
+.maPreviewSnippets
+{
+	color:#555555;
+	font-family:Arial, Verdana, Helvetica, Sans-Serif;
+	font-size:12px;
+	font-weight:normal;
+}
+
+#AdviceHeader
+{
+    font-size:14px;
+    font-weight:bold;
+}
+
+.maPreviewMain
+{
+	background-color:#d0d0d0;
+	background-color:#eee;
+	border-bottom:solid 1px gray;
+	text-align:left;
+	white-space:nowrap;
+}
+
+.maPreviewAdvisor
+{
+	background-repeat:no-repeat;
+	background-position:8px 10px;
+	border-bottom:solid 5px #ddd;
+	border-top:solid 1px gray;
+	background-color:#f7f7f7;
+	display:block;
+	min-height:64px;
+}
+
+.maPreviewSnippets
+{
+	border-bottom:solid 5px #ddd;
+	background-color:#f7f7f7;
+}
+
+.maPreviewAdvisorPanel,
+.maPreviewSnippetsPanel
+{
+	padding-bottom:8px;
+	background-color:#f7f7f7;
+}
+
+.maPreviewAdvisorPanel
+{
+	height:42px;
+	padding:0px 8px 0px 8px;
+}
+
+.maPreviewMoreInfo
+{
+	font-weight:bold;
+	color:green;
+}
+
+.maPreviewSnippetsPanel
+{
+	padding:0px 8px 0px 8px;
+}
+
+.maSnippetsPanelContent 
+{
+	padding: 6px 0px 0px 12px;
+}
+
+.maPreviewSubPanelTitle1
+{
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 8px;
+	color:#777;
+	padding:12px 0px 6px 0px;
+	font-size: 18px;
+	font-weight: 600;
+	font-variant: small-caps;
+}
+
+.maPreviewSubPanelTitle2
+{
+    color: #333;
+    font-size: 18px;
+}
+
+.maTasksHide {
+	padding-left:12px;
+	font-size:12px;
+	color:gray;
+	font-weight:normal;
+    font-variant:normal;
+}
+
+.maPreviewStatusMessage
+{
+	color:Green;
+	font-weight:normal;
+	font-size:12px;
+	margin-left:12px;
+}
+
+.maPreviewAction
+{
+	padding-left:8px;
+	font-weight:normal;
+}
+
+.maNote
+{
+	color:#555555;
+	font-weight:normal;
+}
+
+.maSlideName
+{
+	color:#555555;
+	padding-left:30px;
+	font-weight:normal;
+}
+
+.maAdviceLevel1,
+.maAdviceLevel2
+{
+	padding-left:16px;
+	font-weight:bold;
+	padding-top:2px;
+	padding-bottom:0px;
+}
+
+.maAdviceLevel1
+{
+	color:#437a43;
+	font-weight:normal;
+}
+
+.maAdviceLevel2
+{
+	color:#4668fa;
+}
+
+.maAdditionalInfo
+{
+	font-weight:normal;
+}
+
+.maAdvisorPageSection
+{
+	color:#555555;
+	font-weight:bold;
+	padding-left:6px;
+	padding-top:4px;
+}
+
+.specialMessage
+{
+	color:#222;
+	font-size:12px;
+	font-family:Arial, Verdana, Helvetica, Sans-Serif;
+	line-height:18px;
+	padding:6px;
+	overflow:hidden;
+	border:solid 2px #e5e9f2;
+	background-color:#e7f0f6;
+}
+
+.tourPreviewerMenuItem
+{
+	margin-right:16px;
+}
+
+#PublishPanel
+{
+    visibility:hidden;
+}
+
+.tourPreviewerMenuItemPublishPanel {
+    position: absolute;
+    top: 8px;
+    padding-right: 24px;
+    font-size: 14px;
+    z-index: 2000;
+}
+
+.tourPreviewerContent
+{
+	position:absolute;
+	left:8px;
+	top:70px;
+}
+
+.tourPreviewerDoneButton
+{
+	position:absolute;
+	left:560px;
+	top:37px;
+}
+
+.tourPreviewerHeader
+{
+	position:absolute;
+	left:196px;
+	top:37px;
+	color:#345a91;
+	font-family:Arial, Verdana, Helvetica, Sans-Serif;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.tourPreviewerPageName
+{
+	font-family:Helvetica, Arial;
+	font-size:11px;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	color: #003366;
+	margin-left:12px;
+	padding-top:8px;
+	padding-bottom:4px;
+	max-width:700px;
+	height:18px;
+	text-align:left;
+}
+
+.tourPreviewerSnippet
+{
+	color:#333333;
+	font-family:Courier New, Courier;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.tourPreviewTop
+{
+	position: relative;
+	margin: auto;
+}
+
+.tourPreviewBottom {
+    margin: auto;
+    position: relative;
+ }
+
+.tourPreviewerTourLink
+{
+	font-family:Arial, Verdana, Helvetica, Sans-Serif;
+	font-size:14px;
+	margin: 8px 0px 8px 12px;
+	max-width:300px;
+}
+
+.tourPreviewerTourLink a:link,
+.tourPreviewerTourLink a:visited
+{
+	color:#2f4467;
+	text-decoration:none;
+}
+
+.tourPreviewerTourLink a:hover
+{
+    color: #217702;
+    text-decoration: none;
+}
+
+.assistLink
+{
+	font-family:Arial, Verdana, Sans-Serif;
+	font-size:12px;
+	padding-left:6px;
+}
+
+.assistLink a:link
+{
+	color:#5975b6;
+	text-decoration:underline;
+}
+
+.assistLink a:visited
+{
+	color:#5975b6;
+	text-decoration:underline;
+}
+
+.assistLink a:hover
+{
+	color:#5b9b4d;
+	text-decoration:underline;
+}
