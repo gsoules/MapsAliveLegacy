@@ -6,12 +6,15 @@ diagram, photograph, drawing, or a stylized or historical geographic map. An int
 map can display photos and text, play videos or sound, and even draw routes between
 locations on the map.
 
-MapsAlive was originally developed, marketed, and sold as a commercial product.
-It was developed by George Soules of AvantLogic Corporation. The commercial product
-will be sunsetted effective January 1, 2027, but the legacy source code for the web application
-is now available as open source for those who might benefit from seeing the underlying
-implementation, or who have interest in hosting a private copy of the software on their
-own server for use solely by their organization.
+MapsAlive was originally marketed, and sold as the commercial product [mapsalive.com](https://www.mapsalive.com).
+It was developed by George Soules and Janice Kenyon of AvantLogic Corporation.
+
+The commercial product will be sunsetted effective January 1, 2027, but the legacy source code
+for the web application is available here for commerical MapsAlive customers
+who need to coninue using the application after it expires on December 31, 2026.
+
+It is called the legacy edition to distinguish it from the commercial software
+which has additional components such as a shopping cart which are not included here.
 
 For more information contact [George Soules](mailto:gsoules@avantlogic.com?subject=MapsAlive%20Legacy%20Edition%20inquiry).
 
@@ -41,11 +44,13 @@ and DataStreams.dll -- are governed by perpetual redistribution rights that allo
 **solely** as part of this MapsAlive application. They cannot be used for any other purpose. The other
 DLLs were created by AvantLogic and are governed by the GNU GPL.
 
-## Technology stack
-This is a legacy ASP.NET 2.0 web application built with C# that requires IIS 10 and SQL Server.
+## Technology stack and installation
+MapsAlive is a legacy ASP.NET 2.0 web application built with C# that requires IIS 10 and SQL Server.
+Free versions of all of these components can be installed on a Windows 11 PC.
 
-## Installation
-See the [installation guide](installation.md).
+See the [installation guide](installation.md) to learn how to install the stack components, how to 
+install and configure the MapsAlive software, and how to restore your account and tours from
+ [mapsalive.com](https://www.mapsalive.com).
 
 ## Contributing
 This is a legacy codebase provided as-is. As such, requests or contributions cannot be accepted.
