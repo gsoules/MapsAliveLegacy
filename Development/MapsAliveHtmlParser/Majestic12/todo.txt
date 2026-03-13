@@ -1,0 +1,9 @@
+ToDo:
+
+1) Adding more NUnit test cases (you can help here...)
+ 
+2) Improve documentation/comments (primitive one generated with NDOC)
+
+3) More performance - using pointers and bitmap masks might give some gains,
+   also some rearrangement of tag parsing code should yield more performance
+   let me know if you managed to improve performance!

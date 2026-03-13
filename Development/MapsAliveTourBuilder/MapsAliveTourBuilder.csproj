@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53D09495-DD1D-4876-8936-DF92210767A0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MapsAliveTourBuilder</RootNamespace>
+    <AssemblyName>MapsAlive.TourBuilder</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\MapsAliveWebApp\MapsAliveWebSite\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataStreams, Version=5.15.0.0, Culture=neutral, PublicKeyToken=9c9b03c227e1bea6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyDlls\DataStreams.dll</HintPath>
+    </Reference>
+    <Reference Include="MapsAlive.Engine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MapsAliveWebApp\MapsAliveWebSite\Bin\MapsAlive.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="MapsAlive.HtmlParser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MapsAliveWebApp\MapsAliveWebSite\Bin\MapsAlive.HtmlParser.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Web.UI, Version=2008.2.1001.20, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyDlls\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="ActionQueue.cs" />
+    <Compile Include="Advice.cs" />
+    <Compile Include="AdviceSet.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="AppContent.cs" />
+    <Compile Include="Archive.cs" />
+    <Compile Include="AssertHandler.cs" />
+    <Compile Include="AutoLayout.cs">
+    </Compile>
+    <Compile Include="AutoLayoutOptions.cs" />
+    <Compile Include="Banner.cs" />
+    <Compile Include="BannerImage.cs" />
+    <Compile Include="CategoryManager.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="CreditCard.cs" />
+    <Compile Include="Gallery.cs" />
+    <Compile Include="Exporter.cs" />
+    <Compile Include="ImporterForArchiveXml.cs" />
+    <Compile Include="ExporterForXml_Deprecated.cs" />
+    <Compile Include="ExporterForContent.cs" />
+    <Compile Include="ExporterForArchive.cs" />
+    <Compile Include="FileManager.cs" />
+    <Compile Include="Html.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Html.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Importer.cs" />
+    <Compile Include="ImporterForRoutesSpreadsheet.cs" />
+    <Compile Include="ImporterForContentXml.cs" />
+    <Compile Include="ImporterForHotspotPhotos.cs" />
+    <Compile Include="ImporterForMarkerShapes.cs" />
+    <Compile Include="ImporterForHotpots.cs" />
+    <Compile Include="ImportReport.cs" />
+    <Compile Include="ImportType.cs" />
+    <Compile Include="LayoutManager.cs" />
+    <Compile Include="LeadTracker.cs" />
+    <Compile Include="LeftMenuPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapEditor.cs" />
+    <Compile Include="MapsAliveCrm.cs" />
+    <Compile Include="MapsAliveDatabase.cs" />
+    <Compile Include="MapsAliveDataRecord.cs" />
+    <Compile Include="MapsAliveDataRow.cs" />
+    <Compile Include="MapsAliveHttp.cs" />
+    <Compile Include="MapsAliveMembershipProvider.cs" />
+    <Compile Include="MapsAliveState.cs" />
+    <Compile Include="MarkerDefinition.cs" />
+    <Compile Include="MarkerShape.cs" />
+    <Compile Include="MediaParser.cs" />
+    <Compile Include="MemberPageAction.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderItem.cs" />
+    <Compile Include="PopupOptions.cs" />
+    <Compile Include="PreviewImage.cs" />
+    <Compile Include="ProgressMonitor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReaderForXlsOrCsv.cs" />
+    <Compile Include="Routes.cs" />
+    <Compile Include="Runtime.cs" />
+    <Compile Include="SlideLayout.cs" />
+    <Compile Include="SlideLayoutAreas.cs" />
+    <Compile Include="SlideLayoutAreaSizes.cs" />
+    <Compile Include="SlideLayoutMargin.cs" />
+    <Compile Include="SlideLayoutSpacing.cs" />
+    <Compile Include="SlideLayoutSplitters.cs" />
+    <Compile Include="SlideMacroProcessor.cs" />
+    <Compile Include="SpecialOffer.cs" />
+    <Compile Include="ReaderForSpreadsheet.cs" />
+    <Compile Include="ImporterForSpreadsheet.cs" />
+    <Compile Include="ImporterForTableXml.cs" />
+    <Compile Include="Text.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Text.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour.cs" />
+    <Compile Include="TourAdvisor.cs" />
+    <Compile Include="TourBuilder.cs" />
+    <Compile Include="TourDirectory.cs" />
+    <Compile Include="TourFontScheme.cs" />
+    <Compile Include="TourImage.cs" />
+    <Compile Include="TourLayout.cs" />
+    <Compile Include="TourPage.cs" />
+    <Compile Include="MapImage.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="FontStyleResource.cs" />
+    <Compile Include="Marker.cs" />
+    <Compile Include="MarkerStyle.cs" />
+    <Compile Include="Symbol.cs" />
+    <Compile Include="TooltipStyle.cs" />
+    <Compile Include="MapsAliveDataRecordXml.cs" />
+    <Compile Include="TourResource.cs" />
+    <Compile Include="TourResourceDependencyWalker.cs" />
+    <Compile Include="TourResourceManager.cs" />
+    <Compile Include="TourResourceType.cs" />
+    <Compile Include="ColorScheme.cs" />
+    <Compile Include="TourView.cs" />
+    <Compile Include="TourViewCategory.cs" />
+    <Compile Include="TourViewImage.cs" />
+    <Compile Include="ReaderForImportedXml.cs" />
+    <Compile Include="TourPageXmlWriter.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="XmlUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Html.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Html.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Text.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Text.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpZipLib\ICSharpCode.SharpZipLib.csproj">
+      <Project>{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}</Project>
+      <Name>ICSharpCode.SharpZipLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

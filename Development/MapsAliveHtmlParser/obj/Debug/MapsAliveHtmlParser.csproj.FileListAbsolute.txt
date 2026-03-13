@@ -1,0 +1,12 @@
+\\DELL7\DELL7_Drive_C\AvantLogic\Development\MapsAliveHtmlParser\bin\Debug\MapsAlive.HtmlParser.dll
+\\DELL7\DELL7_Drive_C\AvantLogic\Development\MapsAliveHtmlParser\bin\Debug\MapsAlive.HtmlParser.pdb
+\\DELL7\DELL7_Drive_C\AvantLogic\Development\MapsAliveHtmlParser\obj\Debug\MapsAliveHtmlParser.csprojAssemblyReference.cache
+\\DELL7\DELL7_Drive_C\AvantLogic\Development\MapsAliveHtmlParser\obj\Debug\MapsAliveHtmlParser.csproj.CoreCompileInputs.cache
+\\DELL7\DELL7_Drive_C\AvantLogic\Development\MapsAliveHtmlParser\obj\Debug\MapsAlive.HtmlParser.dll
+\\DELL7\DELL7_Drive_C\AvantLogic\Development\MapsAliveHtmlParser\obj\Debug\MapsAlive.HtmlParser.pdb
+C:\AvantLogic\MapsAliveWebApp\MapsAliveWebSite\Bin\MapsAlive.HtmlParser.dll
+C:\AvantLogic\MapsAliveWebApp\MapsAliveWebSite\Bin\MapsAlive.HtmlParser.pdb
+C:\AvantLogic\Development\MapsAliveHtmlParser\obj\Debug\MapsAliveHtmlParser.csproj.CoreCompileInputs.cache
+C:\AvantLogic\Development\MapsAliveHtmlParser\obj\Debug\MapsAlive.HtmlParser.dll
+C:\AvantLogic\Development\MapsAliveHtmlParser\obj\Debug\MapsAlive.HtmlParser.pdb
+C:\AvantLogic\Development\MapsAliveHtmlParser\obj\Debug\MapsAliveHtmlParser.csprojAssemblyReference.cache

@@ -1,0 +1,12 @@
+C:\AvantLogic\Development\SharpZipLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\AvantLogic\Development\SharpZipLib\bin\Debug\ICSharpCode.SharpZipLib.pdb
+\\DELL7\DELL7_Drive_C\AvantLogic\Development\SharpZipLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+\\DELL7\DELL7_Drive_C\AvantLogic\Development\SharpZipLib\bin\Debug\ICSharpCode.SharpZipLib.pdb
+\\DELL7\DELL7_Drive_C\AvantLogic\Development\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.csproj.CoreCompileInputs.cache
+\\DELL7\DELL7_Drive_C\AvantLogic\Development\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.dll
+\\DELL7\DELL7_Drive_C\AvantLogic\Development\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.pdb
+C:\AvantLogic\MapsAliveWebApp\MapsAliveWebSite\Bin\ICSharpCode.SharpZipLib.dll
+C:\AvantLogic\MapsAliveWebApp\MapsAliveWebSite\Bin\ICSharpCode.SharpZipLib.pdb
+C:\AvantLogic\Development\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.csproj.CoreCompileInputs.cache
+C:\AvantLogic\Development\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.dll
+C:\AvantLogic\Development\SharpZipLib\obj\Debug\ICSharpCode.SharpZipLib.pdb
